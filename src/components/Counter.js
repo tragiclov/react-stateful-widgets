@@ -47,12 +47,13 @@ STEP 6:
 */
 
 import React from 'react'; /* STEP 0 */
-
+  
 export default function Counter() {
   /* STEP 1 */
-
+  const [count, setCount] = useState(0);
   const increment = () => {
     /* STEP 4 */
+    setCount(count + 1)
   };
   const decrement = () => {
     /* STEP 5 */
